@@ -19,9 +19,10 @@ for (let i=1; i < 99; i++) {
   fibonacciNumbers.push(newFib)
 };
 
-// calculate the Fibonacci number they'd like to see
-// if they select a number over 100, clear the displayed number and ask them to select a number from 1-100
-// if they select a number between 1 and 100, display it below the input
+// 1. calculate the Fibonacci number they'd like to see
+// 2. if they select a number outside 1-100, clear the displayed number and ask them
+// to select a number from 1-100
+// 3. if they select a number between 1 and 100, display it below the input
 button.addEventListener("click", function() {
   const selectedFibNumber = document.getElementById('user-input').value;
   if (selectedFibNumber < 1 || selectedFibNumber > 100) {
