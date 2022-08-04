@@ -8,8 +8,8 @@ if (fibonacciNumbers.length == 0) {
   fibonacciNumbers.push(0)
 };
 
-// if we only have one number in the sequence, add a 1 to the end of it
-if (fibonacciNumbers.length == 1) {
+// if we only have one number in the sequence and it's 0, add a 1 to the sequence
+if (fibonacciNumbers.length == 1 || fibonacciNumbers[0] == 0) {
   fibonacciNumbers.push(1)
 };
 
