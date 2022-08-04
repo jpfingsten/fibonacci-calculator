@@ -24,7 +24,7 @@ for (let i=1; i < 99; i++) {
 // if they select a number between 1 and 100, display it below the input
 button.addEventListener("click", function() {
   const selectedFibNumber = document.getElementById('user-input').value;
-  if (selectedFibNumber > 100) {
+  if (selectedFibNumber < 1 || selectedFibNumber > 100) {
     displayedNumber.innerText = '';
     alert('Please select a number between 1 and 100.')
   } else {
